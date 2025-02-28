@@ -1,0 +1,57 @@
+{
+    "issues":[
+        {
+            "name": "PHD Registration",
+            "keywords": ["phd", "studies", "enrolment"],
+            "reply": "Go to PDH office Mon-Fri"
+        },
+        {
+            "name": "Housing",
+            "keywords": ["accomodation", "contract"],
+            "reply": "You will sooner get expelled than get your contract renewed"
+        },
+        {
+            "name": "Enrolment",
+            "keywords": ["admission", "studies", "bachelor", "master"],
+            "reply": "If you wish to enrol for the first time, go to admissions.uni.lu"
+        },
+        {
+            "name": "Reenrolment",
+            "keywords":["admission", "studies", "continue", "prolonging"],
+            "reply": "If you wish to get reenrolled, go to admissions.uni.lu"
+        },
+        {
+            "name": "Residence permit",
+            "keywords":["document", "update", "renew", "permit", "residence"],
+            "reply": "If you wish to update your residence permit, go to admissions.uni.lu"
+        },
+        {
+            "name": "Mobility",
+            "keywords":["erasmus", "exchange"],
+            "reply": "If you wish to get reenrolled, go to admissions.uni.lu"
+        },
+        {
+            "name": "Diplome retreival",
+            "keywords":["graduation", "diploma"],
+            "reply": "If you wish to get your diploma, go to admissions.uni.lu"
+        },
+        {
+            "name": "Graduation information",
+            "keywords":["graduation", "leaving"],
+            "reply": "If you wish to get your diploma, go to admissions.uni.lu"
+        },
+        {
+            "name": "Salary slips",
+            "keywords":["salary", "work"],
+            "reply": "If you wish to get your salary slips, go to admissions.uni.lu"
+        },
+        {
+            "name": "CNS",
+            "keywords":["cns", "insurance", "health"],
+            "reply": "If you wish to get your CNS card updates, go to admissions.uni.lu"
+        }
+    ],
+    "keywords":{
+        
+    }
+}
