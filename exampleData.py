@@ -1,27 +1,34 @@
 issues = [
     {
         "name": "PHD",
-        "type": "strict",
         "reply": "Go to PDH office Mon-Fri",
     },
     {
         "name": "Housing",
-        "type": "strict",
         "reply": "You will sooner get expelled than get your contract renewed",
     },
     {
-        "name": "Admissions",
-        "type": "multiple",
-        "options": ["Enrolment", "Reenrolment"],
-    },
-    {
         "name": "Enrolment",
-        "type": "strict",
         "reply": "If you wish to enrol for the first time, go to admissions.uni.lu",
     },
     {
         "name": "Reenrolment",
-        "type": "strict",
         "reply": "If you wish to get reenrolled, go to admissions.uni.lu",
     },
 ]
+
+def get_input():
+    user_input = input().lower().strip()
+    check_keywords(user_input)
+
+def check_keywords(user_input):
+
+    for issue in issues:
+        if issue["name"].lower() in user_input:
+            print(issue.get("reply", "No reply available"))
+            return
+
+       
+
+
+get_input()
