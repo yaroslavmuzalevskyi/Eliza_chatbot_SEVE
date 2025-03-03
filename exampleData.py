@@ -1,10 +1,12 @@
+from nltk.corpus import wordnet
+
 issues = [
     {
         "name": "PHD",
         "reply": "Go to PDH office Mon-Fri",
     },
     {
-        "name": "Housing",
+        "name": "home",
         "reply": "You will sooner get expelled than get your contract renewed",
     },
     {
@@ -22,11 +24,23 @@ def get_input():
     check_keywords(user_input)
 
 def check_keywords(user_input):
+    user_words = set(user_input.split())
 
     for issue in issues:
-        if issue["name"].lower() in user_input:
+        synonyms = set()
+        
+        synonyms.add(issue["name"].lower())
+
+        for synset in wordnet.synsets(issue["name"]):
+            for lemma in synset.lemmas():
+                synonyms.add(lemma.name().lower())
+        
+        if user_words.intersection(synonyms):
             print(issue.get("reply", "No reply available"))
             return
+    
+    print("No recognized keywords found.")
+    print(synonyms)
 
        
 
