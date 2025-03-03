@@ -17,37 +17,37 @@
         },
         {
             "name": "Reenrolment",
-            "keywords":["admission", "studies", "continue", "prolonging", "reenrol", "again", "new", "enrol"],
+            "keywords": ["admission", "studies", "continue", "prolonging", "reenrol", "again", "new", "enrol"],
             "reply": "If you wish to get reenrolled, go to admissions.uni.lu"
         },
         {
             "name": "Residence permit",
-            "keywords":["document", "update", "updating", "renew", "renewing", "permit", "residence", "residing"],
+            "keywords": ["document", "update", "updating", "renew", "renewing", "permit", "residence", "residing"],
             "reply": "If you wish to update your residence permit, go to admissions.uni.lu"
         },
         {
             "name": "Mobility",
-            "keywords":["erasmus", "exchange", "studies", "study", "studying"],
-            "reply": "If you wish to get reenrolled, go to admissions.uni.lu"
+            "keywords": ["erasmus", "exchange", "studies", "study", "studying"],
+            "reply": "If you wish to get mobility, go to admissions.uni.lu"
         },
         {
             "name": "Diplome retreival",
-            "keywords":["graduation", "diploma", "results"],
+            "keywords": ["graduation", "diploma", "results"],
             "reply": "If you wish to get your diploma, go to admissions.uni.lu"
         },
         {
             "name": "Graduation information",
-            "keywords":["graduation", "graduating", "leaving", "leave", "finish", "finishing"],
-            "reply": "If you wish to get your diploma, go to admissions.uni.lu"
+            "keywords": ["graduation", "graduating", "leaving", "leave", "finish", "finishing"],
+            "reply": "If you wish to get graduated, go to admissions.uni.lu"
         },
         {
             "name": "Salary slips",
-            "keywords":["salary", "work", "working"],
+            "keywords": ["salary", "work", "working"],
             "reply": "If you wish to get your salary slips, go to admissions.uni.lu"
         },
         {
             "name": "CNS",
-            "keywords":["cns", "insurance", "health"],
+            "keywords": ["cns", "insurance", "health"],
             "reply": "If you wish to get your CNS card updates, go to admissions.uni.lu"
         }
     ],

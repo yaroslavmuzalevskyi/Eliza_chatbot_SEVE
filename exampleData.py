@@ -41,14 +41,26 @@ def main():
     user_input = input("Enter your query: ").strip()
     matched_issues=get_matched_issues(user_input)
 
+    # if there is no match between the keywords and 
     if(len(matched_issues)==0):
         reply = random.choice(BASIC_REPLIES["not_understand"])
         print(reply)
         main()
+    #if there was only one match 
     elif(len(matched_issues)==1):
         issue = next((item for item in ISSUES if item["name"] == matched_issues[0]), None)
         reply = issue["reply"]
-        print("thank you")
+        print(f"Your selected issue is {issue['name']}\n////\n{issue['reply']}\n////")
+
+
+        print(random.choice(BASIC_REPLIES["more_help"]))
+        user_input = int(input("Enter your choice (1-yes, 2-no): ").strip())
+        if(user_input==1):
+            main()
+        else:
+            print(random.choice(BASIC_REPLIES["goodbye"]))
+            return
+
     else:
         print("Choose a specific issue you need help with:")
         i=0
@@ -59,7 +71,15 @@ def main():
         
         user_input = int(input("Enter your issue number: ").strip())
         issue = next((item for item in ISSUES if item["name"] == matched_issues[user_input-1]), None)
-        print(f"Your selected issue is {issue['name']}\n{issue['reply']}")
+        print(f"Your selected issue is {issue['name']}\n////\n{issue['reply']}\n////")
+
+        print(random.choice(BASIC_REPLIES["more_help"]))
+        user_input = int(input("Enter your choice (1-yes, 2-no): ").strip())
+        if(user_input==1):
+            main()
+        else:
+            print(random.choice(BASIC_REPLIES["goodbye"]))
+            return
 
 
        
