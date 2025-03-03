@@ -33,7 +33,6 @@ def get_matched_issues(user_input):
 
         if issue_name in user_synonyms or user_synonyms.intersection(issue_synonyms):
             matched_issues.append(issue["name"])
-            print(issue["reply"])
     
     return matched_issues
 
