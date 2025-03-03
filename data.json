@@ -2,17 +2,17 @@
     "issues":[
         {
             "name": "PHD Registration",
-            "keywords": ["phd", "studies", "enrolment"],
+            "keywords": ["phd", "studies", "studying", "enrolment", "doctorate"],
             "reply": "Go to PDH office Mon-Fri"
         },
         {
             "name": "Housing",
-            "keywords": ["accomodation", "contract"],
+            "keywords": ["accomodation", "contract", "living"],
             "reply": "You will sooner get expelled than get your contract renewed"
         },
         {
             "name": "Enrolment",
-            "keywords": ["admission", "studies", "bachelor", "master"],
+            "keywords": ["admission", "studies", "studying", "bachelor", "master"],
             "reply": "If you wish to enrol for the first time, go to admissions.uni.lu"
         },
         {
@@ -22,27 +22,27 @@
         },
         {
             "name": "Residence permit",
-            "keywords":["document", "update", "renew", "permit", "residence"],
+            "keywords":["document", "update", "updating", "renew", "renewing", "permit", "residence", "residing"],
             "reply": "If you wish to update your residence permit, go to admissions.uni.lu"
         },
         {
             "name": "Mobility",
-            "keywords":["erasmus", "exchange"],
+            "keywords":["erasmus", "exchange", "studies", "study", "studying"],
             "reply": "If you wish to get reenrolled, go to admissions.uni.lu"
         },
         {
             "name": "Diplome retreival",
-            "keywords":["graduation", "diploma"],
+            "keywords":["graduation", "diploma", "results"],
             "reply": "If you wish to get your diploma, go to admissions.uni.lu"
         },
         {
             "name": "Graduation information",
-            "keywords":["graduation", "leaving"],
+            "keywords":["graduation", "graduating", "leaving", "leave", "finish", "finishing"],
             "reply": "If you wish to get your diploma, go to admissions.uni.lu"
         },
         {
             "name": "Salary slips",
-            "keywords":["salary", "work"],
+            "keywords":["salary", "work", "working"],
             "reply": "If you wish to get your salary slips, go to admissions.uni.lu"
         },
         {
@@ -51,7 +51,23 @@
             "reply": "If you wish to get your CNS card updates, go to admissions.uni.lu"
         }
     ],
-    "keywords":{
-        
+    "basic_replies":{
+        "greeting":[
+            "Hello, what do you need help with?",
+            "Green what's your problem?"
+        ],
+        "not_understand":[
+            "I'm sorry, could you please clarify your question?",
+            "I don't understand the meaning of that.."
+        ],
+        "cannot_help":[
+            "I'm sorry, but I'm afraid I can't help you today"
+        ],
+        "more_help":[
+            "Great, do you need my help with soething else?"
+        ],
+        "goodbye":[
+            "Thank you for using our SEVE chatbot, don't hesitate to contact me if you have any other questions."
+        ]
     }
 }
