@@ -1,23 +1,15 @@
 from nltk.corpus import wordnet
+import json
+import random
 
-issues = [
-    {
-        "name": "PHD",
-        "reply": "Go to PDH office Mon-Fri",
-    },
-    {
-        "name": "home",
-        "reply": "You will sooner get expelled than get your contract renewed",
-    },
-    {
-        "name": "enrol",
-        "reply": "If you wish to enrol for the first time, go to admissions.uni.lu",
-    },
-    {
-        "name": "Reenrolment",
-        "reply": "If you wish to get reenrolled, go to admissions.uni.lu",
-    },
-]
+with open("data.json", "r") as file:
+    content = file.read()
+    content = json.loads(content)
+
+ISSUES=content["issues"]
+BASIC_REPLIES=content["basic_replies"]
+
+
 
 def get_synonyms(word):
     synonyms = set()
@@ -26,26 +18,48 @@ def get_synonyms(word):
             synonyms.add(lemma.name().lower())
     return synonyms
 
-def check_keywords(user_input):
+def get_matched_issues(user_input):
     user_words = set(user_input.lower().split())
     
     user_synonyms = set(user_words)
     for word in user_words:
         user_synonyms.update(get_synonyms(word))
+
+    matched_issues = []
     
-    for issue in issues:
+    for issue in ISSUES:
         issue_name = issue["name"].lower()
-        issue_synonyms = get_synonyms(issue_name)
+        issue_synonyms = issue["keywords"]
 
         if issue_name in user_synonyms or user_synonyms.intersection(issue_synonyms):
+            matched_issues.append(issue["name"])
             print(issue["reply"])
-            return
-    print("No matching issue found.")
+    
+    return matched_issues
 
 def main():
     user_input = input("Enter your query: ").strip()
-    check_keywords(user_input)
+    matched_issues=get_matched_issues(user_input)
 
+    if(len(matched_issues)==0):
+        reply = random.choice(BASIC_REPLIES["not_understand"])
+        print(reply)
+        main()
+    elif(len(matched_issues)==1):
+        issue = next((item for item in ISSUES if item["name"] == matched_issues[0]), None)
+        reply = issue["reply"]
+        print("thank you")
+    else:
+        print("Choose a specific issue you need help with:")
+        i=0
+        for matched_issue in matched_issues:
+            i=i+1
+            issue = next((item for item in ISSUES if item["name"] == matched_issue), None)
+            print(f"{i}. {issue['name']}")
+        
+        user_input = int(input("Enter your issue number: ").strip())
+        issue = next((item for item in ISSUES if item["name"] == matched_issues[user_input-1]), None)
+        print(f"Your selected issue is {issue['name']}\n{issue['reply']}")
 
 
        

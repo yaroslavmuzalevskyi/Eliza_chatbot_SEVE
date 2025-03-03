@@ -2,7 +2,7 @@
     "issues":[
         {
             "name": "PHD Registration",
-            "keywords": ["phd", "studies", "studying", "enrolment", "doctorate"],
+            "keywords": ["phd", "studies", "enrol", "studying", "study", "enrolment", "doctorate"],
             "reply": "Go to PDH office Mon-Fri"
         },
         {
@@ -12,12 +12,12 @@
         },
         {
             "name": "Enrolment",
-            "keywords": ["admission", "studies", "studying", "bachelor", "master"],
+            "keywords": ["admission", "studies", "enrol", "studying", "bachelor", "master", "study"],
             "reply": "If you wish to enrol for the first time, go to admissions.uni.lu"
         },
         {
             "name": "Reenrolment",
-            "keywords":["admission", "studies", "continue", "prolonging"],
+            "keywords":["admission", "studies", "continue", "prolonging", "reenrol", "again", "new", "enrol"],
             "reply": "If you wish to get reenrolled, go to admissions.uni.lu"
         },
         {
