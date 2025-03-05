@@ -14,13 +14,13 @@
 				"phd office"
 			],
 			"reply": [
-				"Go to PHD office Mon-Fri",
-				"Visit the PHD registration portal or office for assistance",
-				"For PhD registration, check the official guidelines posted at the PHD office"
+				"PhD registration is handled at the PhD Office from Monday to Friday during office hours.",
+				"You can apply for PhD registration via the university's online portal or visit the PhD Office.",
+				"For more details on PhD enrolment, check the official PhD registration guidelines at https://www.uni.lu/research-en/doctoral-education/"
 			]
 		},
 		{
-			"name": "Leave",
+			"name": "Withdrawal from the university",
 			"keywords": [
 				"drop",
 				"dismissal",
@@ -30,12 +30,16 @@
 				"expulse",
 				"expulsion",
 				"deduct",
-				"deduction"
+				"deduction",
+				"withdrawal",
+				"withdrawing",
+				"withdraw"
 			],
 			"reply": [
-				"Go to the Student Disciplinary Office Mon-Fri.",
-				"Visit the official expulsion portal or speak with an office representative for guidance.",
-				"For details on expulsion procedures, check the official guidelines posted at the Disciplinary Office."
+				"If you are considering withdrawing from the university, please consult the Student Affairs Office for guidance on the process.",
+				"Students seeking information on academic withdrawal, temporary leave, or expulsion policies should contact https://www.uni.lu/en/education/academic-matters/student-status/change-or-withdrawal-from-programme/",
+				"For official procedures on leaving the university, including necessary documentation and deadlines, visit https://www.uni.lu/en/education/academic-matters/student-status/change-or-withdrawal-from-programme/",
+				"If you are facing disciplinary issues, schedule a consultation with the Student Disciplinary Office or check https://www.uni.lu/en/education/academic-matters/student-status/change-or-withdrawal-from-programme/"
 			]
 		},
 		{
@@ -58,9 +62,9 @@
 				"house"
 			],
 			"reply": [
-				"You will sooner get expelled than get your contract renewed",
-				"For housing issues, contact the housing department immediately",
-				"Please consult the housing office for updates on your contract"
+				"For housing assistance, please visit the Student Housing Office or email https://www.uni.lu/life-en/accommodation/",
+				"Student accommodation details, including contracts and renewals, are available at https://www.uni.lu/life-en/accommodation/",
+				"If you're looking for a student residence, check the latest updates at https://www.uni.lu/life-en/accommodation/"
 			]
 		},
 		{
@@ -79,9 +83,9 @@
 				"enroll"
 			],
 			"reply": [
-				"If you wish to enrol for the first time, go to admissions.uni.lu",
-				"Please visit admissions.uni.lu for first-time enrolment procedures",
-				"For new student enrolment, follow the guidelines on admissions.uni.lu"
+				"New student enrolment is handled via https://www.uni.lu/en/admissions/ Visit the portal for step-by-step instructions.",
+				"If you are applying for a Bachelor's or Master's program, submit your documents online at https://www.uni.lu/en/admissions/",
+				"Check https://www.uni.lu/en/admissions/ for deadlines, requirements, and procedures regarding student enrolment."
 			]
 		},
 		{
@@ -98,9 +102,9 @@
 				"continue studies"
 			],
 			"reply": [
-				"If you wish to get reenrolled, go to admissions.uni.lu",
-				"For reenrolment procedures, refer to admissions.uni.lu",
-				"Reenrolment inquiries should be directed to admissions.uni.lu"
+				"Reenrolment is required for continuing students. Visit https://www.uni.lu/en/admissions/reenrolment/ for the latest instructions.",
+				"To continue your studies, submit your reenrolment application before the deadline at https://www.uni.lu/en/admissions/reenrolment/",
+				"Reenrolment guidelines, including required documents, can be found at https://www.uni.lu/en/admissions/reenrolment/"
 			]
 		},
 		{
@@ -118,9 +122,9 @@
 				"immigration"
 			],
 			"reply": [
-				"If you wish to update your residence permit, go to admissions.uni.lu",
-				"For residence permit updates, please visit admissions.uni.lu",
-				"Consult admissions.uni.lu for any changes regarding your residence permit"
+				"Residence permit updates are handled by the International Office. Visit https://affluences.com/universite-du-luxembourg-1/universite-du-luxembourg/reservation/ for requirements.",
+				"If you need to renew your permit, check the latest guidelines at https://affluences.com/universite-du-luxembourg-1/universite-du-luxembourg/reservation/",
+				"For residence permit extension and required documents, consult the Admissions Office."
 			]
 		},
 		{
@@ -135,9 +139,9 @@
 				"international exchange"
 			],
 			"reply": [
-				"If you wish to get reenrolled, go to admissions.uni.lu",
-				"For mobility and exchange programs, please visit admissions.uni.lu",
-				"Check admissions.uni.lu for details on mobility programs"
+				"If you are interested in exchange programs like Erasmus, visit the International Mobility Office or check https://www.uni.lu/en/mobility/outgoing-student-mobility/",
+				"The university offers international exchange opportunities. Learn more at https://www.uni.lu/en/mobility/outgoing-student-mobility/",
+				"For details on eligibility, application deadlines, and partner universities, visit the Mobility Office or contact mobility@uni.lu."
 			]
 		},
 		{
@@ -151,9 +155,9 @@
 				"credentials"
 			],
 			"reply": [
-				"If you wish to get your diploma, go to admissions.uni.lu",
-				"Diploma retrieval information can be found at admissions.uni.lu",
-				"For diploma and certificate queries, check admissions.uni.lu"
+				"If you have completed your studies and need to collect your diploma, visit the Registrar’s Office or check https://www.uni.lu/en/education/academic-matters/student-status/diploma/",
+				"Students can retrieve their diplomas by making an appointment at https://www.uni.lu/en/education/academic-matters/student-status/diploma/",
+				"For lost or duplicate diploma requests, contact the Academic Services Office at https://www.uni.lu/en/education/academic-matters/student-status/diploma/"
 			]
 		},
 		{
@@ -169,18 +173,18 @@
 				"convocation"
 			],
 			"reply": [
-				"If you wish to get your diploma, go to admissions.uni.lu",
-				"Graduation details are available at admissions.uni.lu",
-				"For information regarding graduation, please refer to admissions.uni.lu"
+				"The university’s graduation ceremonies are organized by the Academic Office. Check https://www.uni.lu/en/about/academic-calendar/graduation/ for details.",
+				"To register for the next graduation ceremony, visit the graduation portal or contact https://www.uni.lu/en/about/academic-calendar/graduation/",
+				"Graduation event dates, dress codes, and guest invitations are available at https://www.uni.lu/en/about/academic-calendar/graduation/"
 			]
 		},
 		{
 			"name": "Salary slips",
 			"keywords": ["salary", "work", "working", "payroll", "wage", "income"],
 			"reply": [
-				"If you wish to get your salary slips, go to admissions.uni.lu",
-				"Salary slip requests should be directed to admissions.uni.lu",
-				"For salary and payroll queries, check admissions.uni.lu"
+				"University employees and student workers can access salary slips via the HR portal at https://www.uni.lu/en/about/organisation/administration/hr-department/",
+				"If you need a printed copy of your salary slip, visit the Payroll Office during business hours.",
+				"For payroll-related questions, contact the Human Resources department at hr4u@uni.lu."
 			]
 		},
 		{
@@ -194,9 +198,10 @@
 				"card"
 			],
 			"reply": [
-				"If you wish to get your CNS card updates, go to admissions.uni.lu",
-				"For CNS card information, please consult admissions.uni.lu",
-				"Check admissions.uni.lu for updates on your CNS card"
+				"Students must register for CNS health insurance at https://www.uni.lu/life-en/moving-to-luxembourg/insurances/",
+				"If you need to update your CNS card, visit the Student Health Services Office or contact ccss@secu.lu",
+				"For CNS coverage details and medical reimbursement, refer to https://www.uni.lu/life-en/moving-to-luxembourg/insurances/ or call the Social Security Office."
+			
 			]
 		},
 		{
@@ -211,9 +216,10 @@
 				"catalog"
 			],
 			"reply": [
-				"For library access and book loans, please visit the library office or website",
-				"Check the library portal for borrowing guidelines and resource availability",
-				"Visit the library for information on accessing study materials"
+				"Library resources, including borrowing and study spaces, can be accessed at https://www.uni.lu/llc-en/ or phisically in the LLC",
+				"Check the library portal for book availability and loan policies.",
+				"For research materials and digital access, visit https://www.uni.lu/llc-en/"
+			
 			]
 		},
 		{
@@ -230,9 +236,9 @@
 				"hardware"
 			],
 			"reply": [
-				"For IT support, please contact the IT helpdesk at uni.lu",
-				"Technical issues can be addressed by reaching out to the IT support team",
-				"For computer or login problems, please consult the IT helpdesk"
+				"For IT support, please contact the university IT Helpdesk at https://www.uni.lu/life-en/it-technology/",
+				"Technical issues such as login or network problems can be resolved by reaching out to the IT department.",
+				"Check the IT support website at https://www.uni.lu/life-en/it-technology/ for troubleshooting guides and assistance."
 			]
 		},
 		{
@@ -247,9 +253,9 @@
 				"bursary"
 			],
 			"reply": [
-				"For financial aid queries, check the financial aid office website or contact them directly",
-				"Visit the financial aid office for information on scholarships and grants",
-				"Financial assistance details can be found on the official financial aid portal"
+				"For financial aid inquiries, visit the Financial Aid Office or check https://www.uni.lu/life-en/financial-support/scholarships/",
+				"The university offers various funding opportunities. Learn more at https://www.uni.lu/life-en/financial-support/scholarships/",
+				"Scholarship eligibility and application details are available on the Financial Aid portal."
 			]
 		}
 	],
