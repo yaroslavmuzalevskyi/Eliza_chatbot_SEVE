@@ -1,73 +1,263 @@
 {
-    "issues":[
-        {
-            "name": "PHD Registration",
-            "keywords": ["phd", "studies", "enrol", "studying", "study", "enrolment", "doctorate"],
-            "reply": "Go to PDH office Mon-Fri"
-        },
-        {
-            "name": "Housing",
-            "keywords": ["accomodation", "contract", "living"],
-            "reply": "You will sooner get expelled than get your contract renewed"
-        },
-        {
-            "name": "Enrolment",
-            "keywords": ["admission", "studies", "enrol", "studying", "bachelor", "master", "study"],
-            "reply": "If you wish to enrol for the first time, go to admissions.uni.lu"
-        },
-        {
-            "name": "Reenrolment",
-            "keywords": ["admission", "studies", "continue", "prolonging", "reenrol", "again", "new", "enrol"],
-            "reply": "If you wish to get reenrolled, go to admissions.uni.lu"
-        },
-        {
-            "name": "Residence permit",
-            "keywords": ["document", "update", "updating", "renew", "renewing", "permit", "residence", "residing"],
-            "reply": "If you wish to update your residence permit, go to admissions.uni.lu"
-        },
-        {
-            "name": "Mobility",
-            "keywords": ["erasmus", "exchange", "studies", "study", "studying"],
-            "reply": "If you wish to get mobility, go to admissions.uni.lu"
-        },
-        {
-            "name": "Diplome retreival",
-            "keywords": ["graduation", "diploma", "results"],
-            "reply": "If you wish to get your diploma, go to admissions.uni.lu"
-        },
-        {
-            "name": "Graduation information",
-            "keywords": ["graduation", "graduating", "leaving", "leave", "finish", "finishing"],
-            "reply": "If you wish to get graduated, go to admissions.uni.lu"
-        },
-        {
-            "name": "Salary slips",
-            "keywords": ["salary", "work", "working"],
-            "reply": "If you wish to get your salary slips, go to admissions.uni.lu"
-        },
-        {
-            "name": "CNS",
-            "keywords": ["cns", "insurance", "health"],
-            "reply": "If you wish to get your CNS card updates, go to admissions.uni.lu"
-        }
-    ],
-    "basic_replies":{
-        "greeting":[
-            "Hello, what do you need help with?",
-            "Green what's your problem?"
-        ],
-        "not_understand":[
-            "I'm sorry, could you please clarify your question?",
-            "I don't understand the meaning of that.."
-        ],
-        "cannot_help":[
-            "I'm sorry, but I'm afraid I can't help you today"
-        ],
-        "more_help":[
-            "Great, do you need my help with soething else?"
-        ],
-        "goodbye":[
-            "Thank you for using our SEVE chatbot, don't hesitate to contact me if you have any other questions."
-        ]
-    }
+	"issues": [
+		{
+			"name": "PHD Registration",
+			"keywords": [
+				"phd",
+				"studies",
+				"studying",
+				"enrolment",
+				"doctorate",
+				"register",
+				"registration",
+				"apply",
+				"phd office"
+			],
+			"reply": [
+				"Go to PHD office Mon-Fri",
+				"Visit the PHD registration portal or office for assistance",
+				"For PhD registration, check the official guidelines posted at the PHD office"
+			]
+		},
+		{
+			"name": "Housing",
+			"keywords": [
+				"accommodation",
+				"contract",
+				"living",
+				"apartment",
+				"place",
+				"home",
+				"residence",
+				"dorm",
+				"housing",
+				"room",
+				"flat",
+				"house"
+			],
+			"reply": [
+				"You will sooner get expelled than get your contract renewed",
+				"For housing issues, contact the housing department immediately",
+				"Please consult the housing office for updates on your contract"
+			]
+		},
+		{
+			"name": "Enrolment",
+			"keywords": [
+				"admission",
+				"studies",
+				"studying",
+				"bachelor",
+				"master",
+				"register",
+				"apply",
+				"enrolment",
+				"first enrollment",
+				"enrol",
+				"enroll"
+			],
+			"reply": [
+				"If you wish to enrol for the first time, go to admissions.uni.lu",
+				"Please visit admissions.uni.lu for first-time enrolment procedures",
+				"For new student enrolment, follow the guidelines on admissions.uni.lu"
+			]
+		},
+		{
+			"name": "Reenrolment",
+			"keywords": [
+				"admission",
+				"studies",
+				"continue",
+				"prolonging",
+				"register",
+				"apply",
+				"reapply",
+				"renewal",
+				"continue studies"
+			],
+			"reply": [
+				"If you wish to get reenrolled, go to admissions.uni.lu",
+				"For reenrolment procedures, refer to admissions.uni.lu",
+				"Reenrolment inquiries should be directed to admissions.uni.lu"
+			]
+		},
+		{
+			"name": "Residence permit",
+			"keywords": [
+				"document",
+				"update",
+				"updating",
+				"renew",
+				"renewing",
+				"permit",
+				"residence",
+				"residing",
+				"visa",
+				"immigration"
+			],
+			"reply": [
+				"If you wish to update your residence permit, go to admissions.uni.lu",
+				"For residence permit updates, please visit admissions.uni.lu",
+				"Consult admissions.uni.lu for any changes regarding your residence permit"
+			]
+		},
+		{
+			"name": "Mobility",
+			"keywords": [
+				"erasmus",
+				"exchange",
+				"studies",
+				"study",
+				"studying",
+				"mobility",
+				"international exchange"
+			],
+			"reply": [
+				"If you wish to get reenrolled, go to admissions.uni.lu",
+				"For mobility and exchange programs, please visit admissions.uni.lu",
+				"Check admissions.uni.lu for details on mobility programs"
+			]
+		},
+		{
+			"name": "Diploma retrieval",
+			"keywords": [
+				"graduation",
+				"diploma",
+				"results",
+				"certificate",
+				"awards",
+				"credentials"
+			],
+			"reply": [
+				"If you wish to get your diploma, go to admissions.uni.lu",
+				"Diploma retrieval information can be found at admissions.uni.lu",
+				"For diploma and certificate queries, check admissions.uni.lu"
+			]
+		},
+		{
+			"name": "Graduation information",
+			"keywords": [
+				"graduation",
+				"graduating",
+				"leaving",
+				"leave",
+				"finish",
+				"finishing",
+				"commencement",
+				"convocation"
+			],
+			"reply": [
+				"If you wish to get your diploma, go to admissions.uni.lu",
+				"Graduation details are available at admissions.uni.lu",
+				"For information regarding graduation, please refer to admissions.uni.lu"
+			]
+		},
+		{
+			"name": "Salary slips",
+			"keywords": ["salary", "work", "working", "payroll", "wage", "income"],
+			"reply": [
+				"If you wish to get your salary slips, go to admissions.uni.lu",
+				"Salary slip requests should be directed to admissions.uni.lu",
+				"For salary and payroll queries, check admissions.uni.lu"
+			]
+		},
+		{
+			"name": "CNS",
+			"keywords": [
+				"cns",
+				"insurance",
+				"health",
+				"medical",
+				"social security",
+				"card"
+			],
+			"reply": [
+				"If you wish to get your CNS card updates, go to admissions.uni.lu",
+				"For CNS card information, please consult admissions.uni.lu",
+				"Check admissions.uni.lu for updates on your CNS card"
+			]
+		},
+		{
+			"name": "Library Access",
+			"keywords": [
+				"library",
+				"books",
+				"study",
+				"resources",
+				"borrow",
+				"return",
+				"catalog"
+			],
+			"reply": [
+				"For library access and book loans, please visit the library office or website",
+				"Check the library portal for borrowing guidelines and resource availability",
+				"Visit the library for information on accessing study materials"
+			]
+		},
+		{
+			"name": "IT Support",
+			"keywords": [
+				"computer",
+				"login",
+				"password",
+				"IT",
+				"technical",
+				"support",
+				"network",
+				"software",
+				"hardware"
+			],
+			"reply": [
+				"For IT support, please contact the IT helpdesk at uni.lu",
+				"Technical issues can be addressed by reaching out to the IT support team",
+				"For computer or login problems, please consult the IT helpdesk"
+			]
+		},
+		{
+			"name": "Financial Aid",
+			"keywords": [
+				"scholarship",
+				"funding",
+				"aid",
+				"loan",
+				"finance",
+				"grant",
+				"bursary"
+			],
+			"reply": [
+				"For financial aid queries, check the financial aid office website or contact them directly",
+				"Visit the financial aid office for information on scholarships and grants",
+				"Financial assistance details can be found on the official financial aid portal"
+			]
+		}
+	],
+	"basic_replies": {
+		"greeting": [
+			"Hello, what do you need help with?",
+			"Green what's your problem?",
+			"Hi there, how can I assist you today?",
+			"Greetings, please let me know how I can help."
+		],
+		"not_understand": [
+			"I'm sorry, could you please clarify your question?",
+			"I don't understand the meaning of that..",
+			"Could you please provide more details?",
+			"I'm having trouble understanding, could you rephrase?"
+		],
+		"cannot_help": [
+			"I'm sorry, but I'm afraid I can't help you today",
+			"Unfortunately, I'm not able to assist with that request.",
+			"I apologize, but that request is beyond my current capabilities."
+		],
+		"more_help": [
+			"Great, do you need my help with something else?",
+			"Is there anything else I can assist you with?",
+			"Feel free to ask if you have any more questions."
+		],
+		"goodbye": [
+			"Thank you for using our SEVE chatbot, don't hesitate to contact me if you have any other questions.",
+			"Goodbye and take care!",
+			"Thank you for reaching out, have a wonderful day!"
+		]
+	}
 }

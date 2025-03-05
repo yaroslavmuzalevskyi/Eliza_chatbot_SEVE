@@ -6,10 +6,10 @@ with open("data.json", "r") as file:
     content = file.read()
     content = json.loads(content)
 
-ISSUES=content["issues"]
-BASIC_REPLIES=content["basic_replies"]
+ISSUES = content["issues"]
+BASIC_REPLIES = content["basic_replies"]
 
-
+farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "no"]
 
 def get_synonyms(word):
     synonyms = set()
@@ -38,48 +38,33 @@ def get_matched_issues(user_input):
 
 def main():
     user_input = input("Enter your query: ").strip()
-    matched_issues=get_matched_issues(user_input)
+    
+    # End conversation if a farewell word is detected in the input
+    if any(farewell in user_input.lower() for farewell in farewells):
+        print(random.choice(BASIC_REPLIES["goodbye"]))
+        return
 
-    # if there is no match between the keywords and 
-    if(len(matched_issues)==0):
+    matched_issues = get_matched_issues(user_input)
+
+    if len(matched_issues) == 0:
         reply = random.choice(BASIC_REPLIES["not_understand"])
         print(reply)
         main()
-    #if there was only one match 
-    elif(len(matched_issues)==1):
-        issue = next((item for item in ISSUES if item["name"] == matched_issues[0]), None)
-        reply = issue["reply"]
-        print(f"Your selected issue is {issue['name']}\n////\n{issue['reply']}\n////")
-
-
+    elif len(matched_issues) == 1:
+        issue = next((item for item in ISSUES if item["name"].lower() == matched_issues[0].lower()), None)
+        reply = random.choice(issue["reply"])
+        print(f"Your selected issue is {issue['name']}\n////\n{reply}\n////")
         print(random.choice(BASIC_REPLIES["more_help"]))
-        user_input = int(input("Enter your choice (1-yes, 2-no): ").strip())
-        if(user_input==1):
-            main()
-        else:
-            print(random.choice(BASIC_REPLIES["goodbye"]))
-            return
-
-    else:
+        main()
+    elif len(matched_issues) >= 2:
         print("Choose a specific issue you need help with:")
-        i=0
-        for matched_issue in matched_issues:
-            i=i+1
-            issue = next((item for item in ISSUES if item["name"] == matched_issue), None)
-            print(f"{i}. {issue['name']}")
-        
-        user_input = int(input("Enter your issue number: ").strip())
-        issue = next((item for item in ISSUES if item["name"] == matched_issues[user_input-1]), None)
-        print(f"Your selected issue is {issue['name']}\n////\n{issue['reply']}\n////")
-
+        for i, matched_issue in enumerate(matched_issues, start=1):
+            print(f"{i}. {matched_issue}")
+        user_choice = int(input("Enter your issue number: ").strip())
+        issue = next((item for item in ISSUES if item["name"].lower() == matched_issues[user_choice-1].lower()), None)
+        reply = random.choice(issue["reply"])
+        print(f"Your selected issue is {issue['name']}\n////\n{reply}\n////")
         print(random.choice(BASIC_REPLIES["more_help"]))
-        user_input = int(input("Enter your choice (1-yes, 2-no): ").strip())
-        if(user_input==1):
-            main()
-        else:
-            print(random.choice(BASIC_REPLIES["goodbye"]))
-            return
+        main()
 
-
-       
 main()
