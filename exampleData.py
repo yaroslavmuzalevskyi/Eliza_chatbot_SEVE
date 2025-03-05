@@ -10,11 +10,6 @@ with open("data.json", "r") as file:
 ISSUES = content["issues"]
 BASIC_REPLIES = content["basic_replies"]
 
-<<<<<<< HEAD
-farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "thanks"]
-=======
-farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "thanks", "thank you"]
->>>>>>> 8dc88b5cad9b0a9abf817b05a551f2308e36f965
 farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "thanks", "thank you"]
 
 def get_synonyms(word):
