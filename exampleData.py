@@ -1,6 +1,7 @@
 from nltk.corpus import wordnet
 import json
 import random
+from termcolor import colored
 
 with open("data.json", "r") as file:
     content = file.read()
@@ -9,7 +10,7 @@ with open("data.json", "r") as file:
 ISSUES = content["issues"]
 BASIC_REPLIES = content["basic_replies"]
 
-farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "no"]
+farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "thanks", "thank you"]
 
 def get_synonyms(word):
     synonyms = set()
@@ -37,7 +38,7 @@ def get_matched_issues(user_input):
     return matched_issues
 
 def main():
-    user_input = input("Enter your query: ").strip()
+    user_input = input(colored("Enter your query: ","yellow")).strip()
     
     # End conversation if a farewell word is detected in the input
     if any(farewell in user_input.lower() for farewell in farewells):
@@ -57,10 +58,10 @@ def main():
         print(random.choice(BASIC_REPLIES["more_help"]))
         main()
     elif len(matched_issues) >= 2:
-        print("Choose a specific issue you need help with:")
+        print(colored("Choose a specific issue you need help with:", "green"))
         for i, matched_issue in enumerate(matched_issues, start=1):
-            print(f"{i}. {matched_issue}")
-        user_choice = int(input("Enter your issue number: ").strip())
+            print(colored(str(f"{i}. {matched_issue}"), "light_green"))
+        user_choice = int(input(colored("Enter your issue number: ", "green")).strip())
         issue = next((item for item in ISSUES if item["name"].lower() == matched_issues[user_choice-1].lower()), None)
         reply = random.choice(issue["reply"])
         print(f"Your selected issue is {issue['name']}\n////\n{reply}\n////")
