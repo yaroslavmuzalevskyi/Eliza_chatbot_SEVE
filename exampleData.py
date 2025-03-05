@@ -15,6 +15,7 @@ farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", 
 =======
 farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "thanks", "thank you"]
 >>>>>>> 8dc88b5cad9b0a9abf817b05a551f2308e36f965
+farewells = ["bye", "goodbye", "see you", "farewell", "later", "ciao", "adios", "see ya", "thanks", "thank you"]
 
 def get_synonyms(word):
     synonyms = set()
