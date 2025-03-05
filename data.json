@@ -3,6 +3,7 @@
 		{
 			"name": "PHD Registration",
 			"keywords": [
+				"administration",
 				"phd",
 				"studies",
 				"studying",
@@ -22,6 +23,7 @@
 		{
 			"name": "Withdrawal from the university",
 			"keywords": [
+				"administration",
 				"drop",
 				"dismissal",
 				"dropout",
@@ -45,6 +47,7 @@
 		{
 			"name": "Housing",
 			"keywords": [
+				"administration",
 				"accommodation",
 				"accomodation",
 				"accomodations",
@@ -70,6 +73,7 @@
 		{
 			"name": "Enrolment",
 			"keywords": [
+				"administration",
 				"admission",
 				"studies",
 				"studying",
@@ -91,6 +95,7 @@
 		{
 			"name": "Reenrolment",
 			"keywords": [
+				"administration",
 				"admission",
 				"studies",
 				"continue",
@@ -110,6 +115,7 @@
 		{
 			"name": "Residence permit",
 			"keywords": [
+				"administration",
 				"document",
 				"update",
 				"updating",
@@ -130,6 +136,7 @@
 		{
 			"name": "Mobility",
 			"keywords": [
+				"administration",
 				"erasmus",
 				"exchange",
 				"studies",
@@ -147,6 +154,7 @@
 		{
 			"name": "Diploma retrieval",
 			"keywords": [
+				"administration",
 				"graduation",
 				"diploma",
 				"results",
@@ -163,6 +171,7 @@
 		{
 			"name": "Graduation information",
 			"keywords": [
+				"administration",
 				"graduation",
 				"graduating",
 				"leaving",
@@ -201,7 +210,6 @@
 				"Students must register for CNS health insurance at https://www.uni.lu/life-en/moving-to-luxembourg/insurances/",
 				"If you need to update your CNS card, visit the Student Health Services Office or contact ccss@secu.lu",
 				"For CNS coverage details and medical reimbursement, refer to https://www.uni.lu/life-en/moving-to-luxembourg/insurances/ or call the Social Security Office."
-			
 			]
 		},
 		{
@@ -219,7 +227,6 @@
 				"Library resources, including borrowing and study spaces, can be accessed at https://www.uni.lu/llc-en/ or phisically in the LLC",
 				"Check the library portal for book availability and loan policies.",
 				"For research materials and digital access, visit https://www.uni.lu/llc-en/"
-			
 			]
 		},
 		{
