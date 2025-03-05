@@ -20,6 +20,25 @@
 			]
 		},
 		{
+			"name": "Leave",
+			"keywords": [
+				"drop",
+				"dismissal",
+				"dropout",
+				"stop",
+				"leave",
+				"expulse",
+				"expulsion",
+				"deduct",
+				"deduction"
+			],
+			"reply": [
+				"Go to the Student Disciplinary Office Mon-Fri.",
+				"Visit the official expulsion portal or speak with an office representative for guidance.",
+				"For details on expulsion procedures, check the official guidelines posted at the Disciplinary Office."
+			]
+		},
+		{
 			"name": "Housing",
 			"keywords": [
 				"accommodation",
