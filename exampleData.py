@@ -42,7 +42,7 @@ def main():
     
     # End conversation if a farewell word is detected in the input
     if any(farewell in user_input.lower() for farewell in farewells):
-        print(random.choice(BASIC_REPLIES["goodbye"]))
+        print(colored(random.choice(BASIC_REPLIES["goodbye"]), "cyan"))
         return
 
     matched_issues = get_matched_issues(user_input)
@@ -54,7 +54,7 @@ def main():
     elif len(matched_issues) == 1:
         issue = next((item for item in ISSUES if item["name"].lower() == matched_issues[0].lower()), None)
         reply = random.choice(issue["reply"])
-        print(f"Your selected issue is {issue['name']}\n////\n{reply}\n////")
+        print(f"\nYour selected issue is {colored(str(issue['name']), 'yellow')}\n\n{colored(reply,'cyan')}\n")
         print(random.choice(BASIC_REPLIES["more_help"]))
         main()
     elif len(matched_issues) >= 2:
@@ -64,7 +64,7 @@ def main():
         user_choice = int(input(colored("Enter your issue number: ", "green")).strip())
         issue = next((item for item in ISSUES if item["name"].lower() == matched_issues[user_choice-1].lower()), None)
         reply = random.choice(issue["reply"])
-        print(f"Your selected issue is {issue['name']}\n////\n{reply}\n////")
+        print(f"\nYour selected issue is {colored(str(issue['name']), 'yellow')}\n\n{colored(reply, 'cyan')}\n")
         print(random.choice(BASIC_REPLIES["more_help"]))
         main()
 
