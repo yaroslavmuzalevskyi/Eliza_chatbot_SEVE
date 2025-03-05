@@ -3,6 +3,7 @@ import json
 import random
 from termcolor import colored
 
+
 with open("data.json", "r") as file:
     content = file.read()
     content = json.loads(content)
